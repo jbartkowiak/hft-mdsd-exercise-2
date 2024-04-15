@@ -1,0 +1,14 @@
+entity Person {
+    firstName String required,
+    lastName String required,
+    age Integer
+}
+
+entity Task {
+    title String required,
+    description String
+}
+
+relationship OneToMany {
+    Person{task} to Task{person}
+}

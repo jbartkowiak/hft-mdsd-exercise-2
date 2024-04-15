@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20240415161645",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "task",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Task",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "person",
+      "otherEntityRelationshipName": "task",
+      "relationshipName": "person",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}
